@@ -18,8 +18,7 @@ This is a full-stack web application built using the **MERN stack** (MongoDB, Ex
 **AI Integration:**
 - Connected to an AI API (like OpenAI, Gemini, or custom) to analyze and review code
 
-**Database:**
-- MongoDB (for storing reviews, history, user data if needed)
+
 
 ---
 
@@ -34,4 +33,16 @@ This is a full-stack web application built using the **MERN stack** (MongoDB, Ex
 ---
 
 ## 📁 Project Structure
+
+ai-code-review/
+├── client/ # React frontend
+├── server/ # Express backend + AI logic
+│ ├── routes/
+│ ├── controllers/
+│ └── app.js
+├── .env # API keys
+├── README.md
+
+
+
 
