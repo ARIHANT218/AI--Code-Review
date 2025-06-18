@@ -1,0 +1,145 @@
+/* General Reset and Font Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+  }
+  
+  body {
+    background-color: #0f111a;
+    color: #e0e0e0;
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main Layout */
+  main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f111a;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Left Panel - Code Editor */
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1c23;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+  }
+  
+  /* Header */
+  .h {
+    font-size: 1.8rem;
+    color: #61dafb;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Code Editor Box */
+  .code {
+    flex: 1;
+    background-color: #2d2f3a;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: auto;
+  }
+  
+  /* Review Button */
+  .review {
+    background-color: #61dafb;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .review:hover {
+    background-color: #21a1f1;
+  }
+  
+  /* Right Panel - Review Markdown */
+  .right {
+    flex: 1;
+    background-color: #1e1e2f;
+    border-radius: 12px;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  /* Markdown Styling Inside Right Panel */
+  .right h1,
+  .right h2,
+  .right h3 {
+    color: #61dafb;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .right p {
+    font-size: 1rem;
+    color: #dcdcdc;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  .right code {
+    background-color: #2d2f3a;
+    color: #ffa07a;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+  }
+  
+  .right pre {
+    background-color: #2d2f3a;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+  }
+  
+  .right ul, .right ol {
+    padding-left: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .right li {
+    margin-bottom: 8px;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .left, .right {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
